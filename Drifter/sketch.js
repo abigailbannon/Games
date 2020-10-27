@@ -9,7 +9,7 @@ function setup() {
     for (var i = 0; i < 20; i++) {
     var c = createSprite(
       random(width), random(height),
-      random(25, 150), random(25, 150));
+      random(80, 250), random(80, 250));
     c.shapeColor = color(random(150,255),235);
     clouds.add(c);
   }
@@ -23,7 +23,7 @@ function draw() {
      background(85,128,250);
 
   for (var i = 0; i < clouds.length; i++) {
-    clouds[i].position.x += clouds[i].width * 0.01;
+    clouds[i].position.x += clouds[i].width * 0.0015;
     if (clouds[i].position.x > width) {
       clouds[i].position.x = 0;
     }
