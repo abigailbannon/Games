@@ -58,7 +58,7 @@ function draw() {
   }
 
     drawSprites();
-    spr.collide(clouds);
+    //spr.collide(clouds);		moved to if else in if else statement regarding playing vs. winning screen
     spr.overlap(birds, getBirds);
   
   //text portion for directions
@@ -115,10 +115,12 @@ function draw() {
     textSize(24);
     //text(score, width*0.89, height*0.08);
     text("catch all the petals to win", width*0.48,height*0.08);
+	  spr.collide(clouds);
   }
   else {
     background(10);
      drawSprites();
+	  spr.displace(clouds);
     fill(255,0,144);
     textSize(85);
     text("You Win!", width/2, height/2);
