@@ -194,8 +194,8 @@ function draw() {
   fill(10);
       drawSprite(hand);
        drawSprite(spr1);
-  spr1.velocity.x = (mouseX-spr1.position.x)*0.01;
-  spr1.velocity.y = (mouseY-spr1.position.y)*0.01;
+  spr1.velocity.x = (mouseX-spr1.position.x)*0.2;
+  spr1.velocity.y = (mouseY-spr1.position.y)*0.2;
     hand.velocity.x = (mouseX-hand.position.x)*0.0005;
     hand.velocity.y = (mouseY-hand.position.y)*0.0005;
       
