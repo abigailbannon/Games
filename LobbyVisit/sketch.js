@@ -325,7 +325,7 @@ function draw() {
                     rectMode(CENTER);
           noStroke();
           fill(176,155,180,10,10);
-          rect(width/2, height/2, 800, 500);
+          rect(width/2, height/2, width, height);
                     spr1.velocity.x = (mouseX-spr1.position.x)*0.2;
                     spr1.velocity.y = (mouseY-spr1.position.y)*0.2;
                 spr1.displace(chair);
