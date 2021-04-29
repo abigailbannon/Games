@@ -142,7 +142,7 @@ function draw() {
   bounce.addSpeed(0.1, 90);
       {
       if (bounce.position.y > height) {
-        bounce.velocity.y *= -0.8;
+        bounce.velocity.y *= -1;
           }
       if (bounce.position.x > width) {
         bounce.velocity.x *= -1;
