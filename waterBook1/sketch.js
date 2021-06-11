@@ -1,7 +1,7 @@
 let fingers;
 
 function setup() {
-  createCanvas(displayWidth, displayWidth);
+  createCanvas(displayWidth, displayWidth/2);
   // specify multiple formats for different browsers
   fingers = createVideo('trees2.mov');
   fingers.hide(); // by default video shows up in separate dom
@@ -15,7 +15,7 @@ function draw() {
     stroke(255);
     line(mouseX, mouseY, pmouseX, pmouseY);
   scale(3);
-  image(fingers, displayWidth/100, displayWidth/100); // draw the video frame to canvas
+  image(fingers, 0, 0); // draw the video frame to canvas
 
 }
 
